@@ -1,1 +1,1 @@
-This is a webscraping application, designed to alert the user when the prices for the latest NVidia RTX 2080ti graphics cards drop below £1000.
+This is an automated webscraping application, designed to alert the user if prices for the latest NVidia RTX 2080ti graphics cards drop below Â£1000.
