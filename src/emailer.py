@@ -23,7 +23,7 @@ class Emailer:
 # Input user's email address, email pass word, and the subject and message to send
 email = ""
 password = ""
-subject = "GTX 2080ti on sale"
+subject = "RTX 2080ti on sale"
 message = "Good news! The NVidia RTX 2080ti is now below £1000. Maybe time for an upgrade?"
 
 EM = Emailer(email, password, subject, message)
