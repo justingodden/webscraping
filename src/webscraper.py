@@ -57,16 +57,3 @@ class WebScrape:
             f.write(self.IDs[i]+","+self.brands[i]+","+self.names[i] +
                     ","+self.prices[i].replace("£", "").replace(",", "")+"\n")
         f.close()
-
-
-# Scrape this URL
-url = 'https://www.overclockers.co.uk/pc-components/graphics-cards/nvidia/geforce-rtx-2080-ti'
-scrape = WebScrape(url)
-
-
-def main():
-    scrape.findIDs()
-    scrape.findBrands()
-    scrape.findNames()
-    scrape.findPrices()
-    scrape.createSpreadsheet()

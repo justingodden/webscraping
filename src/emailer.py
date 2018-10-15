@@ -18,17 +18,3 @@ class Emailer:
         msg = "Subject: {}\n\n{}".format(self.subject, self.message)
         self.server.sendmail(self.email, self.email, msg)
         self.server.quit()
-
-
-# Input user's email address, email pass word, and the subject and message to send
-email = ""
-password = ""
-subject = "RTX 2080ti on sale"
-message = "Good news! The NVidia RTX 2080ti is now below £1000. Maybe time for an upgrade?"
-
-EM = Emailer(email, password, subject, message)
-
-
-def main():
-    EM.serverConnect()
-    EM.sendMail(subject, message)
